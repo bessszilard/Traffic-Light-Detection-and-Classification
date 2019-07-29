@@ -122,7 +122,7 @@ random_horizontal_flip {
 
 train_input_reader: {
 tf_record_input_reader {
-input_path: "data/train.record"
+input_path: "train.record"
 }
 label_map_path: "data/label_map.pbtxt"
 }
@@ -136,7 +136,7 @@ max_evals: 10
 
 eval_input_reader: {
 tf_record_input_reader {
-input_path: "data/test.record"
+input_path: "test.record"
 }
 label_map_path: "data/label_map.pbtxt"
 shuffle: false
